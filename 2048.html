@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2048</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/2048.css">
+</head>
+<body>
+	<div class="game2048_1" style="width: 500px; max-width: 100%; margin: auto;"></div>
+
+ 	<script src="js/src/vendor/Class/Class.js"></script>
+	<script src="js/src/vendor/Template/template.js"></script>
+	<script src="js/src/vendor/UT/UT.js"></script>
+	<script src="js/src/vendor/UT/Event.js"></script>
+	<script src="js/src/vendor/UT/View.js"></script>
+	<script src="js/src/2048.js"></script>
+
+	<!-- <script src="js/2048.min.js"></script> -->
+
+
+	<script>
+		var game = new UT.Games['2048']({
+			size: 4
+		});
+		document.querySelector('.game2048_1').appendChild(game.el);
+	</script>
+</body>
+</html>
